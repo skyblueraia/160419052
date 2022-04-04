@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/listFood">
+
+    <fragment
+        android:id="@+id/listFood"
+        android:name="com.example.s160419052_advancenativeuts.view.FragmentListFood"
+        android:label="Food List"
+        tools:layout="@layout/fragment_list_food">
+        <action
+            android:id="@+id/fragmentDetailAction"
+            app:destination="@id/fragmentDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.s160419052_advancenativeuts.view.FragmentSetting"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/action_fragmentSetting_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_fragmentSetting_to_fragmentRegister"
+            app:destination="@id/fragmentRegister" />
+    </fragment>
+    <fragment
+        android:id="@+id/history"
+        android:name="com.example.s160419052_advancenativeuts.view.FragmentHistory"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="com.example.s160419052_advancenativeuts.view.FragmentDetail"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="foodName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.example.s160419052_advancenativeuts.view.FragmentCart"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_fragmentCart_to_fragmentPay"
+            app:destination="@id/fragmentPay" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.s160419052_advancenativeuts.view.FragmentLogin"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/fragmentPay"
+        android:name="com.example.s160419052_advancenativeuts.view.FragmentPay"
+        android:label="Pay"
+        tools:layout="@layout/fragment_pay" />
+    <fragment
+        android:id="@+id/fragmentRegister"
+        android:name="com.example.s160419052_advancenativeuts.view.FragmentRegister"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" />
+</navigation>

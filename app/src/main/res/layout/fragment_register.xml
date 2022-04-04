@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FragmentRegister">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Register"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTxtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:layout_editor_absoluteX="96dp" />
+
+        <EditText
+            android:id="@+id/editTxtPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtUser"
+            app:layout_constraintStart_toStartOf="@+id/editTxtUser"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtUser" />
+
+        <EditText
+            android:id="@+id/editTxtRetryPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="retry-password"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtPass"
+            app:layout_constraintStart_toStartOf="@+id/editTxtPass"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtPass" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Register"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtRetryPass"
+            tools:layout_editor_absoluteX="150dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

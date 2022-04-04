@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/listFood"
+        android:icon="@drawable/ic_baseline_format_list_numbered_24"
+        android:title="List Food"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Cart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="History"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Setting"
+        app:showAsAction="always" />
+</menu>
